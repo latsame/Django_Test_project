@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+                <div class="p-text" id="teacher">
+                    <h1 class="h-t">ບັນດາອາຈານ</h1>
+                    <h1 class="h-t">ປະຈຳພາກວິທະຍາສາດຄອມພິວເຕີ</h1>
+                </div>
+                <div class="grid1">
+
+                    {% for portfolio in portfolios %}
+
+                    <div class="grid-item1">
+
+                        <img class="card-img1" src="{{ portfolio.image.url }}" alt="Rome" />
+                        <div class="card-content1">
+                            <h1 class="card-header1">{{ portfolio.link }}</h1>
+                            
+                        </div>
+                    </div>
+                    
+                    {% endfor %}
+                </div>
+               <div class="grid1">
+
+                    {% for pictures in portfolior %}
+
+                    <div class="grid-item1">
+
+                        <img class="card-img1" src="{{ pictures.image.url }}" alt="Rome" />
+                        <div class="card-content1">
+                            <h1 class="card-header1">{{ pictures.link }}</h1>
+                            
+                        </div>
+                    </div>
+                    
+                    {% endfor %}
+                </div>
+                
+                {% endblock %}
+    
+                
+            

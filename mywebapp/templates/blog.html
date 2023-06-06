@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+                <hr>
+    
+                <div class="p-text" id="blog">
+                    <h1 class="h-t">ກິດຈະກຳພາຍໃນໂຮງຮຽນ</h1>
+                </div>
+    
+                <div class="container-img">
+
+                    {% for category in categories %}
+                        {% for picture in category.skills_set.all %}
+                    <div class="item-img">
+                        <div class="img-con-img">
+                            <a href="http://lkclaos.org/lao-%e0%ba%81%e0%ba%b4%e0%ba%94%e0%ba%88%e0%ba%b0%e0%ba%81%e0%ba%b3%e0%ba%9e%e0%ba%b2%e0%ba%8d%e0%bb%83%e0%ba%99%e0%ba%a7%e0%ba%b4%e0%ba%97%e0%ba%b0%e0%ba%8d%e0%ba%b2%e0%bb%84%e0%ba%a5/">
+                                <img src="{{ picture.skill_name.url }}" alt=""></a>
+                        </div>
+                    </div>
+                        {% endfor %}
+                    {% endfor %}
+    
+                </div>
+    
+                <div class="container-img">
+
+                    {% for picture in blogs %}
+                    
+                    <div class="item-img">
+                        <div class="img-con-img">
+                            <a href="http://lkclaos.org/lao-%e0%ba%81%e0%ba%b4%e0%ba%94%e0%ba%88%e0%ba%b0%e0%ba%81%e0%ba%b3%e0%ba%9e%e0%ba%b2%e0%ba%8d%e0%bb%83%e0%ba%99%e0%ba%a7%e0%ba%b4%e0%ba%97%e0%ba%b0%e0%ba%8d%e0%ba%b2%e0%bb%84%e0%ba%a5/">
+                                <img src="{{ picture.image.url }}" alt=""></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+    
+                </div>
+                </section>
+    
+            </div>
+            {% endblock %}

@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="{% static 'assets/css/styles1.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'assets/css/stylea.css' %}"> -->
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Lao-Korean College</title>
+    </head>
+    <body>
+        <div class="container">
+            <!--==================== HEADER ====================-->
+            <header class="header">
+                <nav class="nav ">
+                    <a href="#" class="nav__logo">
+                        <img src="{% static 'assets/img/logo.png' %}" alt="Educator Logo">
+                    </a>
+    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="{% url 'index' %}" class="nav__link">ໜ້າຫຼັກ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="{% url 'about' %}" class="nav__link">ກ່ຽວກັບເຮົາ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="{% url 'teacher' %}" class="nav__link">ບັນດາອາຈານ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="{% url 'blog' %}" class="nav__link">ກິດຈະກຳພາຍໃນວິທະຍາໄລ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#footer" class="nav__link">ຕິດຕໍ່ເຮົາ</a>
+                            </li>
+    
+                        </ul>
+    
+    
+    
+                        <div class="nav__close" id="nav-close">
+                            <i class='bx bx-x'></i>
+                        </div>
+                    </div>
+                    <button class="button button--bestia">
+                    <i id ="phon1"class="fa-solid fa-phone"></i>
+                    <a href="tel:021-671-080"><div class="button__bg"></div><span>021-671-080</span></a>
+                </button>
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+    
+                </nav>
+            </header>
+    
+    
+            <!--==================== MAIN ====================-->
+            <div class="text__containen" id="home">
+                <div class="text__content">
+                    
+                    <div class="text__content-box1">
+                        <h1 class="text__info">Welcome to Department of Computer Science </h1>
+                        <p class="text__form">ຍິນດີຕ້ອນຮັບເຂົ້າສູ່ ພາກວິຊາ ວິທະຍາສາດຄອມພິວເຕີ</p>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="img__comtent">
+                        <img src="{% static 'assets/img/croppedd.jpg' %}" class="img-box1">
+                    </div>
+                </div>
+            </div>
+            <!--=============== ABOUT ===============-->
+            
+            <section class="section-1 ">
+            </section>
+            <div class="b-dy">
+                <div class="p-text test">
+                    
+                    <div class="container2">
+                        <div class="box">
+                            <div class="textq">
+                                <a href="http://lkclaos.org/%e0%bb%81%e0%ba%99%e0%ba%b0%e0%ba%99%e0%ba%b3%e0%ba%81%e0%ba%b2%e0%ba%99%e0%ba%ae%e0%ba%b1%e0%ba%9a%e0%ba%99%e0%ba%b1%e0%ba%81%e0%ba%aa%e0%ba%b6%e0%ba%81%e0%ba%aa%e0%ba%b2-2/"><p style="font-size: 25px;">ແນະນຳການຮັບນັກສຶກສາ</p></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="textq">
+                                <a href="http://lkclaos.org/%e0%ba%a5%e0%ba%b0%e0%ba%9a%e0%ba%bb%e0%ba%9a%e0%ba%97%e0%ba%b6%e0%ba%99%e0%ba%81%e0%ba%b2%e0%ba%99%e0%ba%aa%e0%ba%b6%e0%ba%81%e0%ba%aa%e0%ba%b2/"><p style="font-size: 25px;">ລະບົບທຶນການສຶກສາ</p></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="textq">
+                                <a href="http://lkclaos.org/%e0%ba%81%e0%ba%b0%e0%ba%94%e0%ba%b2%e0%ba%99%e0%ba%82%e0%bb%88%e0%ba%b2%e0%ba%a7/"><p style="font-size: 25px;">ກະດານຂ່າວ</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+             
+                </section>
+    
+            </div>
+            <div id="footer"></div>
+            
+    
+            <footer>
+    
+                <div class="footer-grid">
+    
+                    <div class="grid-item">
+    
+                        <div class="footer-logo">
+                            <img src="{% static 'assets/img/logo.png' %}" alt=" educator logo white ">
+                        </div>
+    
+                        <p class="footer-text ">
+                            ວິທະຍາໄລທີ່ໃຫ້ການບໍລິການແກ່ຄົນຍຸກໃໝ່ ແລະ ຊຸ່ມຊົນທີ່ຫ່າງໄກສອກຫຼີກ.
+                        </p>
+    
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/AjanComprogram" target="_blank" class="i-1">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCHrlFXxSVltzXzjLpfDNdcJmmxZMmfqNcphpnStfvpdxXdxQxBTfNqRmmSZNKqgMXvTKMrL" target="_blank" class="i-2">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="tel:021-671-080" class="i-3">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="https://www.google.la/maps/place/Lao-Korean+College/@17.9930949,102.527826,17.52z/data=!4m5!3m4!1s0x31246a203983bf9d:0x4d940a4a295e8838!8m2!3d17.9931247!4d102.5278148?hl=ko" target="_blank" class="i-4">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <ul class="grid-item ">
+    
+                        <h4 class="item-heading ">Our Link</h4>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/" target="_blank">ວິທະຍາໄລລາວ-ເກົາຫຼີ</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%ba%84%e0%ba%b3%e0%ba%97%e0%ba%b1%e0%ba%81%e0%ba%97%e0%ba%b2%e0%ba%8d%e0%ba%88%e0%ba%b2%e0%ba%81%e0%ba%9c%e0%ba%b9%e0%bb%89%e0%ba%ad%e0%ba%b3%e0%ba%99%e0%ba%a7%e0%ba%8d%e0%ba%81%e0%ba%b2/" target="_blank">ຄຳທັກທາຍຈາກຜູ້ອຳນວຍການ</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/onlineregistration/" target="_blank">ລົງທະບຽນອອນລາຍ</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%ba%9b%e0%ba%b0%e0%ba%ab%e0%ba%a7%e0%ba%b1%e0%ba%94%e0%ba%84%e0%ba%a7%e0%ba%b2%e0%ba%a1%e0%bb%80%e0%ba%9b%e0%ba%b1%e0%ba%99%e0%ba%a1%e0%ba%b2/" target="_blank">ປະຫວັດຄວາມເປັນມາ</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%bb%80%e0%ba%88%e0%ba%b1%e0%ba%94%e0%ba%a5%e0%ba%b1%e0%ba%81%e0%ba%aa%e0%ba%b0%e0%ba%99%e0%ba%b0%e0%bb%80%e0%ba%94%e0%ba%b1%e0%bb%88%e0%ba%99%e0%ba%82%e0%ba%ad%e0%ba%87-lkc/" target="_blank">ເຈັດລັກສະນະເດັ່ນຂອງ LKC</a>
+                        </li>
+    
+                    </ul>
+                    <ul class="grid-item ">
+    
+                        <h4 class="item-heading " target="_blank">Our Link</h4>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%bb%82%e0%ba%84%e0%ba%87%e0%ba%ae%e0%bb%88%e0%ba%b2%e0%ba%87%e0%ba%81%e0%ba%b2%e0%ba%99%e0%ba%88%e0%ba%b1%e0%ba%94%e0%ba%95%e0%ba%b1%e0%bb%89%e0%ba%87/" target="_blank">ໂຄງຮ່າງການຈັດຕັ້ງ</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%ba%a5%e0%ba%b0%e0%ba%9a%e0%ba%bb%e0%ba%9a%e0%ba%97%e0%ba%b6%e0%ba%99%e0%ba%81%e0%ba%b2%e0%ba%99%e0%ba%aa%e0%ba%b6%e0%ba%81%e0%ba%aa%e0%ba%b2/" target="_blank">ລະບົບທຶນການສຶກສາ</a>
+                        </li>
+    
+    
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/%e0%ba%ab%e0%ba%bc%e0%ba%b1%e0%ba%81%e0%ba%9b%e0%ba%b1%e0%ba%94%e0%ba%aa%e0%ba%b0%e0%ba%8d%e0%ba%b2-%e0%bb%81%e0%ba%a5%e0%ba%b0-%e0%bb%80%e0%ba%9b%e0%ba%bb%e0%bb%89%e0%ba%b2%e0%bb%9d%e0%ba%b2%e0%ba%8d/" target="_blank">ຫຼັກປັດສະຍາ ແລະ ເປົ້າໝາຍຂອງການສຶກສາ</a>
+                        </li>
+                        <li class="list-item ">
+                            <a href="http://lkclaos.org/lao-%e0%ba%ad%e0%ba%bb%e0%ba%87%e0%ba%81%e0%ba%b2%e0%ba%99%e0%ba%ae%e0%bb%88%e0%ba%a7%e0%ba%a1%e0%ba%a1%e0%ba%b7%e0%ba%aa%e0%ba%b2%e0%ba%81%e0%ba%bb%e0%ba%99/" target="_blank">ອົງການຮ່ວມມືສາກົນ</a>
+                        </li>
+    
+    
+                    </ul>
+                    <ul class="grid-item ">
+    
+                        <h4 class="item-heading ">ຕິດຕໍ່ສື່ສານ</h4>
+    
+                        <li class="list-item ">
+                            <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCHrlFXxSVltzXzjLpfDNdcJmmxZMmfqNcphpnStfvpdxXdxQxBTfNqRmmSZNKqgMXvTKMrL" target="_blank"><span class="list-item-color">E-mail:</span> laokoreancollege@gmail.com</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="#footer"><span class="list-item-color">Address:</span> Phonsavathnuea Village, Sikhottabong <br> District, Vientiane Capital, Lao PDR.</a>
+                        </li>
+    
+                        <li class="list-item ">
+                            <a href="https://www.facebook.com/Lao-Korean-College-1472688249486161" target="_blank"><span class="list-item-color">Facebook:</span> lao-korean college</a>
+                        </li>
+                        <li class="list-item ">
+                            <a href="https://www.facebook.com/AjanComprogram" target="_blank"><span class="list-item-color">Facebook:</span> Computer Program Development Centre of Lao Korean College</a>
+                        </li>
+    
+    
+                    </ul>
+    
+                </div>
+            </footer>
+        </div>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="{% static 'assets/js/mainm.js' %}"></script>
+        <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    </body>
+</html>
